@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Airlines Flight 191</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="author" content="Lakatos Hunor Zoltán">
+    <meta name="description" content="This page tells the story of the DC-10 aircraft, 
+    and its accidents, highlighting the 3 most serious ones.">
+    <meta name="copyright" content="The site was created for educational purposes.">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+
+</head>
+
+<body onload="header_fgv(), warning()">
+    <nav class="big-nav">
+        <ul id="sidemenu">
+            <li onclick="disappear()"><a href="#"><svg class="x" xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="flight_901.html">Flight 901</a></li>
+            <li><a href="flight_191.html">Flight 191</a></li>
+            <li><a href="flight_981.html">Flight 981</a></li>
+        </ul>
+        <ul>
+            <li><a href="index.html" class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                        <path
+                            d="M280-80v-100l120-84v-144L80-280v-120l320-224v-176q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800v176l320 224v120L560-408v144l120 84v100l-200-60-200 60Z" />
+                    </svg></a></li>
+            <li class="disappear"><a href="history.html">History</a></li>
+            <li class="disappear"><a href="flight_901.html">Flight 901</a></li>
+            <li class="disappear"><a href="flight_191.html" id="current">Flight 191</a></li>
+            <li class="disappear"><a href="flight_981.html">Flight 981</a></li>
+            <li class="menubutton" onclick="appear()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+    <header>
+        <div> <span id="header-one">American</span></div>
+        <div> <span id="header-two">Airlines</span></div>
+        <div><span id="header-three">Flight
+                191</span></div>
+
+
+
+    </header>
+    <hr>
+    <div class="flight-aa-img"></div>
+    <p class="aa-caption">Actual picture of American Airlines Flight 191, photographed by Michael Laughlin</p>
+    <hr>
+
+    <div class="container">
+        <div class="aside-container">
+            <nav>
+                <ul>
+                    <li><a href="#prior-id">Prior</a></li>
+                    <li><a href="#crash-id">Crash</a></li>
+                    <li><a href="#cause-id">Cause</a></li>
+                    <li><a href="#aftermath-id">Aftermath</a></li>
+                    <li><a href="#legacy-id">Legacy</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <div class="ohare">
+                <figure><img src="img/O'Hare_International_Airport_210526_(cropped) (1).jpg"
+                        alt="O'Hare international Airport" title="O'Hare international Airport">
+                    <figcaption>O'Hare international Airport</figcaption>
+                </figure>
+            </div>
+        </div>
+        <section class="prior" id="prior-id">
+            <h1>Prior to the accident</h1>
+            <hr>
+            <p><span class="intexthighlighting">May 25, 1979, was a clear and sunny day in Chicago</span>, bustling with
+                the activity typical of O’Hare
+                International Airport, one of the busiest transportation hubs in the world. Flight 191, operated by
+                American Airlines, <span class="intexthighlighting">was scheduled to depart at 3:00 p.m. for Los Angeles
+                    International Airport</span>. The
+                aircraft assigned to this journey was a McDonnell Douglas DC-10, an advanced wide-body jetliner popular
+                in commercial aviation for its capacity and efficiency.</p>
+            <hr>
+            <img src="img/American_Airlines_640px_472px.png" alt="American Airlines DC-10"
+                class="aa-dc-10-img intertextimage" title="American Airlines DC-10">
+            <hr>
+            <p>The passengers on Flight 191 were a diverse group. Families, business travelers, and vacationers filled
+                the seats, their anticipation blending with the hum of airport life. Boarding proceeded smoothly, with
+                the flight crew greeting passengers with smiles, unaware of the significance this day would hold in
+                aviation history. <span class="intexthighlighting">Captain Walter Lux</span>, a seasoned pilot with over
+                22,000 flight hours, was at the
+                controls, supported by <span class="intexthighlighting">First Officer James Dillard and Flight Engineer
+                    Alfred Udovich</span>, both experienced
+                and well-trained.</p>
+            <hr>
+            <p>As the clock ticked closer to the scheduled departure time, the DC-10 was cleared to taxi to the runway.
+                The operations at O’Hare continued like clockwork; the ground crew ensured that luggage was loaded, the
+                plane refueled, and final checks completed. Passengers settled into their seats, flipping through
+                in-flight magazines, chatting quietly, or gazing out at the runways bustling with activity.</p>
+            <hr>
+
+            <p><span class="intexthighlighting">At 3:02 p.m., the aircraft began its takeoff roll down Runway
+                    32R</span>. The engines roared to life, and the
+                plane accelerated along the tarmac, heading toward what should have been a routine cross-country flight.
+                Onboard, there was little to suggest anything unusual as the passengers experienced the familiar
+                sensation of being pressed back into their seats during takeoff. For a brief moment, the flight lifted
+                off the ground, beginning its ascent into a clear blue sky.
+            </p>
+            <hr>
+            <p><span class="intexthighlighting">But just as the aircraft climbed to about 300 feet, something went
+                    terribly wrong.</span>
+
+            </p>
+
+
+            <hr>
+        </section>
+
+
+
+        <hr>
+        <article class="crash" id="crash-id">
+            <h1>Crash</h1>
+            <hr>
+            <p>Unbeknownst to those on board, <span class="intexthighlighting">the left engine—a massive General
+                    Electric CF6—suddenly tore away from the
+                    wing</span>, flipping over the top of the aircraft before crashing to the ground below. <span
+                    class="intexthighlighting">The violent detachment
+                    severed crucial hydraulic lines, disabling critical systems</span> that controlled the wing's
+                leading-edge
+                slats. These slats were essential for maintaining lift during takeoff. The pilots, with no way of
+                knowing the full extent of the damage, found themselves in an increasingly dire situation.</p>
+            <hr>
+
+            <p>Inside the cabin, chaos erupted. Passengers seated on the left side of the plane likely saw the engine
+                fall away, while others were jolted by the sudden change in the aircraft’s behavior. Overhead bins
+                rattled open, oxygen masks dangled uselessly as the cabin filled with confusion and fear.</p>
+            <hr>
+            <p>From the ground, onlookers saw the DC-10 veer to the left. Without the slats on the left wing, the plane
+                couldn’t maintain lift evenly, causing it to roll dangerously to one side. The pilots fought to regain
+                control, but the situation was insurmountable.</p>
+            <hr>
+            <p>Within moments, Flight 191 had turned nearly upside down. Witnesses described a horrifying scene: the
+                massive jet, engines screaming, plummeted nose-first into an open field just north of the airport. The
+                impact was devastating. A fireball erupted, sending thick black smoke billowing into the sky, visible
+                for miles around.</p>
+            <hr>
+            <img id="aa-remains" src="img/AA191-crash-site.png" alt="Remains of American Airlines Flight 191"
+                title="Remains of American Airlines Flight 191" class="intertextimage">
+            <hr>
+
+        </article>
+        <hr>
+        <section class="cause" id="cause-id">
+            <h1>Cause</h1>
+            <hr>
+            <p><span class="intexthighlighting">The root cause of the crash was traced to a design flaw in the DC-10's
+                    engine mount. The engine’s pylon,
+                    which was responsible for holding the engine in place, was not adequately reinforced</span>. This
+                flaw made it
+                vulnerable to failure under the stress of flight, particularly during takeoff when the aircraft
+                experiences maximum lift forces.</p>
+            <hr>
+            <img id="aa-pylon" src="img/DC-10_engine-pylon.svg.png" alt="DC-10's pylon, that detached from Flight 191"
+                title="DC-10's pylon, that detached from Flight 191" class="intertextimage">
+            <hr>
+            <p>In particular, the failure of the hydraulic lines that powered the engine controls severed the connection
+                to the engine, which led to the subsequent separation of the engine and wing. The National
+                Transportation Safety Board (NTSB) investigation concluded that this failure was the primary cause of
+                the crash. In addition, the NTSB pointed to inadequate maintenance and inspection procedures, which
+                allowed the faulty pylon to go unnoticed.</p>
+            <hr>
+            <p>The crash prompted immediate changes in aircraft design, particularly with regard to the DC-10’s engine
+                mounts. The FAA implemented stricter maintenance standards and required more frequent inspections of the
+                aircraft's pylon and engine mount systems to prevent similar incidents in the future.</p>
+            <hr>
+        </section>
+        <section class="aftermath" id="aftermath-id">
+            <h1>Aftermath</h1>
+            <hr>
+            <p>Emergency responders arrived quickly, but there was little they could do. The crash was catastrophic—none
+                of the 271 people on board survived, and two others on the ground were killed. The field where Flight
+                191 came to rest was unrecognizable, littered with fragments of the aircraft, personal belongings, and a
+                trail of destruction that would haunt all who witnessed it.</p>
+            <hr>
+            <p>Investigators from the National Transportation Safety Board (NTSB) arrived soon after, combing through
+                the wreckage for clues. They discovered that improper maintenance during an earlier engine replacement
+                had weakened the pylon holding the left engine to the wing. A crack had formed, and during takeoff, the
+                immense stress proved too much.</p>
+            <hr>
+            <h1 id="legacy-id">Legacy</h1>
+            <hr>
+            <p>The crash of Flight 191 remains one of the deadliest in U.S. aviation history. It was a tragic
+                convergence of human error and mechanical failure, a stark reminder of the importance of rigorous
+                maintenance and safety protocols. Yet, out of this disaster came significant changes in aviation
+                practices, ensuring that such an event would be less likely to occur again.
+            </p>
+            <hr>
+            <p>Today, the story of Flight 191 serves as a solemn chapter in the history of flight—a tale of lives lost
+                but not forgotten, of lessons learned in the harshest way possible, and of the enduring pursuit of safer
+                skies.</p>
+            <hr>
+        </section>
+        <footer>
+            <p>This site is for educational purposes only! | Created by: Lakatos Hunor Zoltán</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

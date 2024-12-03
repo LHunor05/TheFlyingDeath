@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkish Airlines Flight 981</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="author" content="Lakatos Hunor Zoltán">
+    <meta name="description" content="This page tells the story of the DC-10 aircraft, 
+    and its accidents, highlighting the 3 most serious ones.">
+    <meta name="copyright" content="The site was created for educational purposes.">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+</head>
+
+<body onload="header_fgv()">
+    <nav class="big-nav">
+        <ul id="sidemenu">
+            <li onclick="disappear()"><a href="#"><svg class="x" xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="flight_901.html">Flight 901</a></li>
+            <li><a href="flight_191.html">Flight 191</a></li>
+            <li><a href="flight_981.html">Flight 981</a></li>
+        </ul>
+        <ul>
+            <li><a href="index.html" class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                        <path
+                            d="M280-80v-100l120-84v-144L80-280v-120l320-224v-176q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800v176l320 224v120L560-408v144l120 84v100l-200-60-200 60Z" />
+                    </svg></a></li>
+            <li class="disappear"><a href="history.html">History</a></li>
+            <li class="disappear"><a href="flight_901.html">Flight 901</a></li>
+            <li class="disappear"><a href="flight_191.html">Flight 191</a></li>
+            <li class="disappear"><a href="flight_981.html" id="current">Flight 981</a></li>
+            <li class="menubutton" onclick="appear()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+    <header>
+        <div><span id="header-one">Turkish</span></div>
+        <div><span id="header-two">Airlines</span></div>
+        <div><span id="header-three">Flight
+                981</span></div>
+
+
+
+    </header>
+    <hr>
+    <div class="flight-tur-img"></div>
+    <hr>
+
+    <div class="container">
+        <aside class="aside-container">
+            <nav>
+                <ul>
+                    <li><a href="#prior-id">Prior</a></li>
+                    <li><a href="#crash-id">Crash</a></li>
+                    <li><a href="#cause-id">Cause</a></li>
+                    <li><a href="#aftermath-id">Aftermath</a></li>
+                    <li><a href="#legacy-id">Legacy</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <div class="under-mini-nav">
+                <h1>Animation of Flight 981's crash</h1>
+                <br>
+                <iframe class="tur-video" width="560" height="315"
+                    src="https://www.youtube.com/embed/ZqV4B8bJjI0?si=w5Ajfb-7-z9x8ADw" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </aside>
+
+        <section class="prior" id="prior-id">
+            <h1>Prior to the Accident</h1>
+            <hr>
+            <p><span class="intexthighlighting">Sunday, March 3, 1974, began as a routine day for Turkish Airlines
+                    Flight 981</span>. The flight, operated by a
+                McDonnell Douglas DC-10-10, was scheduled to depart Istanbul and make its way to London Heathrow, with a
+                stopover at Paris's Orly Airport to pick up additional passengers. Turkish Airlines, eager to compete in
+                the burgeoning international aviation market, had promoted this flight as an affordable option for
+                European and Asian travelers, attracting a diverse group of passengers. Among the <span
+                    class="intexthighlighting">346 individuals
+                    onboard</span> were families traveling for leisure, business professionals, and even a Japanese
+                sports team
+                returning from a tournament.</p>
+            <hr>
+            <p>The DC-10, marketed as one of the most advanced wide-body aircraft of its time, was equipped with
+                sophisticated avionics and a spacious cabin layout. However, the aircraft’s design also included a
+                hidden flaw in its cargo door locking mechanism—a defect that had caused a similar incident months
+                earlier but had not yet been fully addressed by the manufacturer. Flight 981's captain, <span
+                    class="intexthighlighting">Nejat Berkoz</span>,
+                was a veteran pilot with decades of experience, supported by <span class="intexthighlighting">First
+                    Officer Ömer Subay and Flight
+                    Engineer Erdal İnanç</span>. All three were seasoned professionals, and they carried out pre-flight
+                checks
+                meticulously, unaware of the hidden danger beneath the aircraft’s polished exterior.</p>
+            <hr>
+            <p>The boarding process at Orly Airport was hectic but orderly, with passengers filling the aircraft to
+                capacity. Spirits were high as the <span class="intexthighlighting">plane took off from Paris at 12:32
+                    PM local time</span>. The crew and
+                passengers alike anticipated a smooth journey, and the DC-10 ascended gracefully into the skies above
+                France, cruising towards its final destination. In the cabin, travelers chatted, read magazines, and
+                gazed out of the windows, completely unaware of the catastrophic chain of events that was about to
+                unfold.</p>
+            <hr>
+        </section>
+        <hr>
+        <article class="crash" id="crash-id">
+            <h1>Crash</h1>
+            <hr>
+            <p>Just minutes after takeoff, as Flight 981 reached its cruising altitude, disaster struck. <span
+                    class="intexthighlighting">At
+                    approximately 12:40 PM, a loud, deafening noise erupted from the rear of the aircraft. The rear left
+                    cargo door, improperly secured due to the DC-10’s design flaw, tore away from the fuselage</span>.
+                The
+                resulting rapid decompression caused a section of the cabin floor above the cargo hold to collapse,
+                severing critical control cables that linked the cockpit to the plane’s rear control surfaces.</p>
+            <hr>
+            <p>With the aircraft’s controls crippled, the pilots struggled desperately to regain command, but their
+                efforts were in vain. The plane entered an uncontrollable descent, plummeting at an alarming rate toward
+                the ground. Inside the cabin, chaos reigned as passengers and crew were thrown about violently. The
+                oxygen masks failed to deploy in time, and panic swept through the aircraft in its final moments. <span
+                    class="intexthighlighting">At
+                    12:41 PM, the DC-10 slammed into the Ermenonville Forest</span>, just outside Paris, at an estimated
+                speed of
+                over 800 kilometers per hour. The impact was so severe that the aircraft disintegrated upon contact,
+                scattering debris over a vast area.</p>
+            <hr>
+            <p><span class="intexthighlighting">The crash claimed the lives of all 346 people onboard</span>, making it
+                the deadliest aviation disaster in
+                history at the time. The aftermath left an indelible mark not only on the victims' families but also on
+                the global aviation industry. The quiet forest of Ermenonville became the site of unspeakable tragedy,
+                as rescue workers arrived to find a scene of devastation that would haunt them for years to come.</p>
+            <hr>
+            <img id="tur-remains" src="img/TK981_crash_site.jpg" alt="Remains of Turkish Airlines Flight 981"
+                title="Remains of Turkish Airlines Flight 981" class="intertextimage">
+            <hr>
+        </article>
+        <hr>
+        <section class="cause" id="cause-id">
+            <h1>Cause</h1>
+            <hr>
+            <p>The investigation into the crash of Flight 981 revealed that the <span class="intexthighlighting">primary
+                    cause was the catastrophic
+                    failure of the rear left cargo door</span>. The door, which was designed to latch mechanically and
+                electrically, had a critical design flaw that allowed it to appear locked even when it wasn’t fully
+                secure. During flight, the immense pressure difference between the cabin and the outside air caused the
+                door to blow off. The resulting decompression collapsed part of the cabin floor, severing essential
+                control cables that rendered the aircraft uncontrollable.</p>
+            <hr>
+            <img src="img/Photo_of_American_Airlines_Flight_96_cargo_door.jpg"
+                alt="American Airlines FLight 96 cargo door, same door malfunctioned in both flights"
+                class="first-acc-pic intertextimage" title="American Airlines FLight 96 cargo door, same door malfunctioned in both flights">
+            <hr>
+            <p>This flaw had been identified months earlier in a similar incident involving another DC-10, but McDonnell
+                Douglas, the aircraft’s manufacturer, had failed to implement sufficient corrective measures across all
+                aircraft. Furthermore, maintenance practices and oversight at the time allowed the issue to go unnoticed
+                during pre-flight inspections. Investigators also highlighted systemic issues in the aviation industry,
+                including insufficient regulatory enforcement and cost-cutting measures that prioritized speed and
+                efficiency over safety.</p>
+            <hr>
+        </section>
+
+        <section class="aftermath" id="aftermath-id">
+            <h1>Aftermath</h1>
+            <hr>
+            <p>The crash of Turkish Airlines Flight 981 sent shockwaves through the global community. In its immediate
+                aftermath, grieving families demanded accountability, while aviation experts called for urgent reforms.
+                Lawsuits were filed against McDonnell Douglas and Turkish Airlines, and intense scrutiny was placed on
+                the regulatory bodies responsible for overseeing aircraft safety.</p>
+            <hr>
+            <p>Within months, McDonnell Douglas issued mandatory modifications to the DC-10’s cargo door mechanism,
+                addressing the design flaw that had caused the crash. International aviation authorities introduced
+                stricter safety standards for cargo door inspections and certification processes. The tragedy also
+                spurred advancements in decompression-resistant aircraft designs, ensuring that future planes could
+                better withstand sudden pressure changes.</p>
+            <hr>
+        </section>
+        <hr>
+        <section class="legacy zea-legacy" id="legacy-id">
+            <h1>Legacy</h1>
+            <hr>
+            <p>The legacy of Turkish Airlines Flight 981 lies in the sweeping changes it brought to aviation safety. The
+                tragedy underscored the dire consequences of ignoring early warning signs and cutting corners in
+                aircraft manufacturing and maintenance. It served as a stark reminder of the human cost of systemic
+                failures and inspired a renewed commitment to passenger safety.</p>
+            <hr>
+            <p>Today, the lessons learned from Flight 981 continue to shape the aviation industry. Modern aircraft are
+                subjected to far more rigorous testing and certification processes, and safety protocols have become a
+                cornerstone of airline operations. While the loss of 346 lives remains a solemn reminder of aviation’s
+                past mistakes, it has also ensured that future generations of passengers can travel with greater
+                confidence in the safety of the skies.</p>
+            <hr>
+        </section>
+
+        <footer>
+            <p>This site is for educational purposes only! | Created by: Lakatos Hunor Zoltán</p>
+        </footer>
+    </div>
+
+
+
+
+</body>
+
+</html>

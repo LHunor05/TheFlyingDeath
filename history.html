@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of the DC-10</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css">
+    <meta name="author" content="Lakatos Hunor Zoltán">
+    <meta name="description" content="This page tells the story of the DC-10 aircraft, 
+    and its accidents, highlighting the 3 most serious ones.">
+    <meta name="copyright" content="The site was created for educational purposes.">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+
+</head>
+
+<body onload="header_fgv()">
+    <nav class="big-nav">
+        <ul id="sidemenu">
+            <li onclick="disappear()"><a href="#"><svg class="x" xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="flight_901.html">Flight 901</a></li>
+            <li><a href="flight_191.html">Flight 191</a></li>
+            <li><a href="flight_981.html">Flight 981</a></li>
+        </ul>
+        <ul>
+            <li><a href="index.html" class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                        <path
+                            d="M280-80v-100l120-84v-144L80-280v-120l320-224v-176q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800v176l320 224v120L560-408v144l120 84v100l-200-60-200 60Z" />
+                    </svg></a></li>
+            <li class="disappear"><a href="history.html" id="current">History</a></li>
+            <li class="disappear"><a href="flight_901.html">Flight 901</a></li>
+            <li class="disappear"><a href="flight_191.html">Flight 191</a></li>
+            <li class="disappear"><a href="flight_981.html">Flight 981</a></li>
+            <li class="menubutton" onclick="appear()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+    <header>
+        <div><span id="header-one">History</span></div>
+        <div><span id="header-two">of</span></div>
+        <div><span id="header-three">DC-10</span></div>
+    </header>
+    <hr>
+    <section class="center slider">
+        <div><img src="img/Douglas_DC-10_Eastern_640px_472px.png" alt="Eastern DC-10 airplane"
+                title="Eastern DC-10 airplane"></div>
+        <div><img src="img/Aircraft.dc-10.750pix_640px_472px.png" alt="Banglasdesh Airlines DC-10"
+                title="Banglasdesh Airlines DC-10">
+        </div>
+        <div><img src="img/Douglas_DC-10_Alitalia_640px_472px.png" alt="Alitalia DC-10" title="Alitalia DC-10"></div>
+        <div><img src="img/First_McDonnell_Douglas_DC-10_in_Flight_640px_472px.png" alt="DC-10 first Flight"
+                title="DC-10 first Flight"></div>
+        <div><img src="img/McDonnell_Douglas_DC-10_Prototype_Landing_640px_472px.png" alt="DC-10 Prototype landing"
+                title="DC-10 Prototype landing">
+        </div>
+
+
+    </section>
+    <hr>
+
+    <div class="container">
+        <aside class="aside-container">
+            <nav>
+                <ul>
+                    <li><a href="#development-id">Development</a></li>
+                    <li><a href="#success-id">Early Success</a></li>
+                    <li><a href="#first-id">First Accident</a></li>
+                    <li><a href="#accidents-id">Accidents</a></li>
+                    <li><a href="#legacy-id">Legacy</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <div class="fuel-consumption">
+                <h1>Fuel Consumption Calculator</h1>
+                <hr>
+                <label for="hours">Enter flight duration (hours, up to 16):</label>
+                <input type="number" name="hours" id="hours" min="1" max="16" placeholder="Enter hours (1-12)" required>
+                <button onclick="calculateFuel()">Calculate</button>
+                <div class="result" id="result"></div>
+            </div>
+        </aside>
+        <section class="prior" id="development-id">
+            <h1>Development</h1>
+            <hr>
+            <p>The DC-10, developed by McDonnell Douglas, emerged as a groundbreaking innovation in the aviation
+                industry during the late 1960s and early 1970s. Its creation was driven by the demand for an advanced,
+                larger, and more efficient jetliner to replace aging aircraft like the DC-8. Simultaneously, <span
+                    class="intexthighlighting">McDonnell
+                    Douglas aimed to compete with the Boeing 747</span>, which was making headlines as the first jumbo
+                jet.
+                Recognizing the need for a high-capacity aircraft that could handle both domestic and international
+                routes, the company began designing the DC-10 with a passenger capacity ranging between 250 and 380
+                seats, depending on the configuration.</p>
+            <hr>
+            <p>The design of the DC-10 stood out due to its <span class="intexthighlighting">unique tri-jet
+                    configuration</span>, featuring three engines: two
+                mounted under each wing and a third integrated into the base of the vertical stabilizer at the tail.
+                This arrangement balanced the need for sufficient power while maintaining fuel efficiency, which was a
+                significant concern in the industry at the time. Engineers prioritized optimizing the aircraft’s range,
+                enabling it to undertake long-haul flights while meeting the operational needs of major airlines.
+                Additionally, the design offered more redundancy than twin-engine planes of the era, adding to its
+                appeal in terms of safety and performance.</p>
+            <hr>
+            <p>When the DC-10 <span class="intexthighlighting">made its commercial debut in 1970</span>, it garnered
+                considerable attention for its advanced
+                technological features. These included state-of-the-art avionics, which enhanced navigation and
+                operational reliability, and an innovative cabin layout that focused on passenger comfort. Airlines
+                could configure the cabin with luxurious wide-body seating and additional amenities, setting a new
+                standard for passenger experience. Furthermore, the DC-10 boasted a longer range compared to many
+                contemporaneous airliners, making it ideal for international routes connecting distant global
+                destinations.</p>
+            <hr>
+        </section>
+        <hr>
+        <section class="cause" id="success-id">
+            <h1>Early Success of the DC-10</h1>
+            <hr>
+            <p>Upon its introduction, the DC-10 quickly became a favored choice among airlines, praised for its
+                capacity, efficiency, and range. Its ability to carry up to 380 passengers on long-haul flights aligned
+                perfectly with the increasing demand for international air travel during the 1970s. As airlines sought
+                more fuel-efficient aircraft to meet rising passenger numbers, the DC-10 stood out for its advanced
+                technology and large cargo capacity, making it an ideal solution for both commercial and cargo flights.
+            </p>
+            <hr>
+            <p>By the mid-1970s, the DC-10 was firmly established as a key player in global aviation, securing a
+                competitive spot alongside other popular models such as the Boeing 747. The aircraft was widely used by
+                airlines for both passenger and cargo operations due to its versatility, which allowed it to operate
+                efficiently on a variety of routes. Its spacious design made it particularly popular for
+                transcontinental flights, which were on the rise during this period. Furthermore, the DC-10's large
+                capacity helped lower ticket prices for passengers, making long-distance air travel more accessible to
+                the general public.</p>
+            <hr>
+            <p><span class="intexthighlighting">Everything seemed to be going well.</span></p>
+            <hr>
+        </section>
+
+        <section class="aftermath" id="first-id">
+            <h1>The First Accident</h1>
+            <hr>
+            <h2>American Airlines Flight 96</h2>
+            <hr>
+            <p>
+                On <span class="intexthighlighting">June 12, 1972</span>, American Airlines Flight 96 was en route from
+                Detroit to New York when a cargo door failed to latch properly. The resulting explosive decompression
+                caused the loss of the door and severe fuselage damage, which disabled the aircraft's hydraulic and
+                control systems. Despite this, <span class="intexthighlighting">the crew managed to perform an emergency
+                    landing</span> back at Detroit
+                Metropolitan Airport, <span class="intexthighlighting">saving all 63 people on board</span>.
+            </p>
+            <hr>
+            <img class="first-acc-pic intertextimage" src="img/Photo_of_American_Airlines_Flight_96_cargo_door.jpg"
+                alt="Image of Flight 96's cargo door" title="Flight 96's cargo door">
+            <hr>
+            <p>
+                The investigation found that the cargo door latch failure was due to the design of the DC-10’s doors,
+                which allowed pressure inside the plane to force the seal loose. In response, the FAA and McDonnell
+                Douglas redesigned the cargo door locking mechanism and increased safety protocols to prevent similar
+                incidents.
+            </p>
+            <hr>
+        </section>
+        <hr>
+        <article class="crash" id="accidents-id">
+            <h1>Accidents</h1>
+            <hr>
+            <p>
+                After the American Airlines Flight 96 incident in 1972, which highlighted critical safety concerns
+                involving the DC-10's cargo door, a series of additional accidents would lead to greater scrutiny and
+                significant changes to the aircraft’s design and operational procedures. Despite the initial success of
+                the DC-10 and its wide adoption by major airlines, the subsequent accidents severely impacted its
+                reputation and called into question its safety features.</p>
+            <hr>
+
+            <p>Following Flight 96, one of the significant crashes was TWA Flight 800 in 1973, which resulted in a fire
+                in the cargo hold due to a mechanical failure, though the aircraft was able to return safely to the
+                airport. This incident highlighted concerns about the DC-10's cargo door and fire safety mechanisms.</p>
+            <hr>
+            <p>Air India Flight 855 (1982) was another tragic event involving a DC-10. The aircraft crashed into the
+                Arabian Sea shortly after takeoff from Mumbai, killing all 329 people on board. The investigation
+                revealed issues with the aircraft's autopilot system, contributing to the crash. This was a further blow
+                to the aircraft's reputation, as it emphasized the need for more reliable flight systems.</p>
+            <hr>
+            <p>In addition to these, there were other accidents involving the DC-10, such as Japan Airlines Flight 123
+                in 1985, which, while not directly linked to a flaw in the DC-10 design, highlighted broader concerns
+                regarding airline safety procedures and maintenance practices. In total, the aircraft was involved in
+                several fatal crashes throughout its service life, though the reasons behind them varied.</p>
+            <hr>
+            <p>As a result of these multiple accidents, McDonnell Douglas took extensive measures to redesign the
+                aircraft, improve safety protocols, and address the underlying issues, such as cargo door security,
+                engine mounting, and autopilot reliability. These changes led to a significant overhaul in both DC-10
+                operations and aircraft safety standards across the industry, helping to restore confidence in the
+                aircraft for years to come.</p>
+            <hr>
+            <p>However, the aircraft's history was marred by a series of 55 accidents and incidents, including 32
+                hull-loss accidents, which resulted in a total of 1261 fatalities.</p>
+            <hr>
+            <section class="history_record">
+                <h1>Safety Record</h1>
+                <hr>
+                <p class="record_p">The McDonnell Douglas DC-10 has a mixed safety record, marked by numerous incidents
+                    and
+                    accidents during
+                    its decades of operation. In total, the DC-10 was involved in <span class="intexthighlighting">55
+                        accidents, of which 32 were fatal,
+                        resulting in over 1,400 fatalities</span>. While the aircraft was popular with airlines for its
+                    passenger and
+                    cargo capabilities, several high-profile crashes and design flaws earned it a reputation for being
+                    unsafe during its early years.</p>
+                <hr>
+                <table>
+                    <tr>
+                        <td>Metric</td>
+                        <td>Value</td>
+                    </tr>
+                    <tr>
+                        <td>Total Accidents</td>
+                        <td>55</td>
+                    </tr>
+                    <tr>
+                        <td>Fatal Accidents</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>Total Fatalities</td>
+                        <td>1261</td>
+                    </tr>
+                    <tr>
+                        <td>Deadliest Accident</td>
+                        <td>346 fatalities</td>
+                    </tr>
+                </table>
+            </section>
+            
+
+        </article>
+        <hr>
+        <section class="legacy" id="legacy-id">
+            <h1>Legacy</h1>
+            <hr>
+            <p>The McDonnell Douglas DC-10 left a significant legacy in the world of aviation, despite its troubled
+                history with multiple accidents and safety concerns. Its design and operational capabilities helped
+                shape the future of commercial aviation, and the lessons learned from its flaws led to improvements in
+                aircraft design and safety protocols across the industry.</p>
+            <hr>
+
+            <p>After the DC-10's production ceased, McDonnell Douglas continued to innovate and address the issues
+                highlighted by the DC-10's accidents, leading to the development of the MD-11, a larger and more refined
+                version of the DC-10. The MD-11 featured updated avionics, better fuel efficiency, and enhanced safety
+                features, aiming to fix the DC-10's earlier shortcomings. The MD-11, while not as successful in
+                commercial service as its predecessor, served well in cargo operations and was used for long-haul
+                flights until its retirement.</p>
+            <hr>
+
+            <p>The legacy of the DC-10 also includes its role in McDonnell Douglas' eventual merger with Boeing in 1997.
+                The DC-10 and other McDonnell Douglas aircraft played a part in Boeing's acquisition of the company,
+                which helped strengthen Boeing's position in the commercial aviation market. After the merger, Boeing
+                integrated McDonnell Douglas designs into its own lineup, with many features of the DC-10 influencing
+                later models, such as the Boeing 777 and Boeing 767.</p>
+            <hr>
+            <p>Despite the DC-10’s troubled reputation early on, it became a cornerstone for McDonnell Douglas, with its
+                production contributing to the financial growth of the company in the 1970s and 1980s. Its presence in
+                the skies during the 1970s and 1980s was a testament to its design’s enduring appeal, particularly for
+                airlines seeking a high-capacity, long-range aircraft.</p>
+            <hr>
+            <p>The lessons learned from the DC-10, including improvements in safety protocols and engineering practices,
+                helped establish higher standards for airliner development. The aircraft's legacy continues to influence
+                the design and safety innovations of modern commercial jets.</p>
+        </section>
+        <aside class="aside-down">
+            <figure><img src="img/MD11_AND_DC10_varig_comparison.jpg" alt="MD-11 and DC-10 next to each other"
+                    class="comparison" title="MD-11 and DC-10 next to each other">
+                <figcaption>MD-11 (left) and DC-10 (right)</figcaption>
+            </figure>
+            <hr>
+            <figure><img src="img/Fedex_Flight_14_wreckage.jpg" alt="Fedex Flight 80, MD-11 wreckage"
+                    class="fedex-wreckage" title="Fedex Flight 80, MD-11 wreckage">
+                <figcaption>MD-11 has it's own history, Fedex Flight 80</figcaption>
+            </figure>
+        </aside>
+        <footer>
+            <p>This site is for educational purposes only! | Created by: Lakatos Hunor Zoltán</p>
+        </footer>
+    </div>
+
+
+    <script src="jquery-3.7.1.js" type="text/javascript"></script>
+    <script src="slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.home-slider').slick({
+                infinite: true,
+                autoplay: true,
+                prevArrow: $('.prev'),
+                nextArrow: $('.next'),
+            });
+            $(".center").slick({
+                dots: true,
+                infinite: true,
+                centerMode: true,
+                centerPadding: '0px',
+                slidesToShow: 1,
+                autoplay: false,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: true,
+                            centerPadding: '0px',
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            arrows: true,
+                            centerPadding: '0px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>
